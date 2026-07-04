@@ -4,6 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>YouTube - Broadcast Yourself.</title>
 <style type="text/css">
+/* =========================================
+   CSS ORIGINAL YOUTUBE 2007 (LIMPO)
+   ========================================= */
 html { height: 100% }
 body { font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: #FFF; color: #000; margin: 0; padding: 0; }
 a:link, a:visited, a:active { color: #03C; }
@@ -17,12 +20,14 @@ h1,h2,h3,h4,h5,h6 { font-weight: bold; color: #000; margin-top: 5px; margin-bott
 h1 { font-size: 19px; } h2 { font-size: 16px; } h3 { font-size: 14px; }
 hr { border: 0; margin-top: 12px; border-top: 1px dashed #999; height: 1px; }
 
+/* Utilitários */
 .smallText { font-size: 11px; } .xsmallText { font-size: 10px; } .largeText { font-size: 14px; }
 .grayText { color: #666; } .bold { font-weight: bold; }
 .clear { clear: both; } .clearL { clear: left; } .spacer { clear: both; height: 1px; font-size: 1px; }
 .marT0 { margin-top: 0; } .marB0 { margin-bottom: 0; } .marB3 { margin-bottom: 3px; } .marL38 { margin-left: 38px; }
 .padT3 { padding-top: 3px; } .padB1 { padding-bottom: 1px; } .padB3 { padding-bottom: 3px; }
 
+/* Layout Base */
 #baseDiv { position: relative; width: 875px; margin-left: auto; margin-right: auto; padding-top: 5px; }
 #logoTagDiv { float: left; padding-top: 6px; }
 #utilDiv { height: 13px; padding-bottom: 12px; text-align: right; }
@@ -30,52 +35,57 @@ hr { border: 0; margin-top: 12px; border-top: 1px dashed #999; height: 1px; }
 #searchDiv { padding-bottom: 8px; text-align: right; }
 .searchField { width: 250px; color: #000; font-size: 12px; }
 
-/* Upload Button - Estilo da imagem */
-#uploadBtn {
-  display: inline-block;
-  margin: 10px 0 15px 0;
-  text-align: center;
-  width: 100%;
-}
-#uploadBtn a {
-  font-size: 14px;
-  font-weight: bold;
-  color: #03C;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-#uploadBtn a:hover { text-decoration: underline; }
-.upload-icon {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  background: #999;
-  border-radius: 50%;
-  position: relative;
-  vertical-align: middle;
-}
-.upload-icon::after {
-  content: '↻';
-  color: #fff;
-  font-size: 16px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: bold;
-}
-
+/* Navigation */
 #gNavDiv { height: 28px; text-align: right; }
+#gNavDiv #upload { float: right; width: 220px; font-size: 1.1em; font-weight: bold; text-align: center; line-height: 28px; }
 #gNavDiv .tab { float: right; }
 #gNavBottom { height: 24px; margin-bottom: 6px; }
 
+/* Upload Button Style (como na imagem) */
+.uploadBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #0033CC;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+.uploadBtn:hover {
+  text-decoration: underline;
+  background: #eef;
+}
+.uploadBtn .uploadIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: linear-gradient(180deg, #e8e8e8 0%, #b0b0b0 100%);
+  border-radius: 50%;
+  border: 1px solid #999;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  flex-shrink: 0;
+}
+.uploadBtn .uploadIcon svg {
+  width: 14px;
+  height: 14px;
+  fill: #fff;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.3));
+}
+
+/* Main Content */
 #hpMainContent { float: left; width: 555px; }
 #hpSideContent { float: right; width: 300px; }
 .hpContentBlock { margin: 5px 0; }
 .hpBlockHeading { font-size: 16px; font-weight: bold; padding-bottom: 5px; }
+#hpSVidHeader { font-weight: bold; font-size: 12px; color: #999; margin-bottom: 6px; }
+.hpSVidEntry { float: left; width: 23%; text-align: center; padding: 0 3px; }
 
+/* Featured Videos */
 #hpFeaturedHeading { padding: 10px 0 0 0; margin-left: 20px; border-bottom: 1px solid #CCC; }
 #hpFeaturedMoreTop { float: right; padding-top: 4px; font-weight: bold; }
 #hpFeaturedMoreBottom { margin-bottom: 15px; padding-top: 8px; text-align: right; font-weight: bold; }
@@ -84,6 +94,7 @@ hr { border: 0; margin-top: 12px; border-top: 1px dashed #999; height: 1px; }
 #hpEditorHead { padding-bottom: 1px; font-size: 11px; color: #333; }
 #hpEditorAbout { float: right; padding-top: 12px; font-size: 11px; }
 
+/* Video Entries */
 .vEntry { padding: 10px 0; border-bottom: 1px dotted #999; }
 .vEntry table { width: 100%; }
 .vEntry td { vertical-align: top; }
@@ -99,7 +110,8 @@ hr { border: 0; margin-top: 12px; border-top: 1px dashed #999; height: 1px; }
 .eLink { text-decoration: none; border-bottom: 1px dotted #03C; color: #0033CC; }
 .rating { font-size: 14px; color: #f90; letter-spacing: 2px; }
 
-#hpAccountLinksDiv { width: 300px; line-height: 30px; font-size: 11px; margin-bottom: 10px; background: #eef; border-bottom: 1px solid #ccc; text-align: center; padding: 5px 0; }
+/* Sidebar & Boxes */
+#hpAccountLinksDiv { width: 300px; height: 30px; line-height: 30px; font-size: 11px; margin-bottom: 10px; background: #eef; border-bottom: 1px solid #ccc; text-align: center; }
 .headerRCBox { margin-bottom: 0; }
 .headerRCBox .rch { display: block; }
 .headerRCBox .rch * { display: block; height: 1px; overflow: hidden; }
@@ -126,6 +138,7 @@ hr { border: 0; margin-top: 12px; border-top: 1px dashed #999; height: 1px; }
 .hpGroupEntry { margin-bottom: 10px; }
 .hpChannelEntry { margin-bottom: 10px; }
 
+/* Footer */
 #footerDiv { clear: both; width: 875px; margin-top: 12px; padding-bottom: 12px; font-size: 11px; }
 #footContent { background: #EEE; border-top: 1px solid #CCC; border-bottom: 1px solid #CCC; padding: 8px 0; }
 .footColumnLeft { width: 215px; padding-left: 10px; margin-right: 20px; border-right: 1px solid #CCC; float: left; }
@@ -136,12 +149,18 @@ hr { border: 0; margin-top: 12px; border-top: 1px dashed #999; height: 1px; }
 .footValues .column { float: left; margin-right: 20px; }
 #footCopyright { padding-top: 12px; text-align: center; color: #666; }
 
+
+/* =========================================
+   TEMA AZUL KAWAII (OVERRIDES)
+   ========================================= */
 body { background-color: #F4F8FC; }
+a:link, a:visited, a:active { color: #0033CC; }
 .hpBlockHeading { color: #1E4A8C; border-bottom: 1px solid #ccc; }
 #hpFeaturedHeading h1 { color: #1E4A8C; }
 .vtitle a { color: #1E4A8C; }
 #gNavBottom { background: #1E4A8C; }
 
+/* Login Box Azul */
 .headerRCBox .rch * { background: #4A7DC9; }
 .headerRCBox .rch1 { border-color: #6B9AE0; background: #5A8DD9; }
 .headerRCBox .rch2 { border-color: #8BB0F0; background: #4A7DC9; }
@@ -152,9 +171,11 @@ body { background-color: #F4F8FC; }
 .headerTitle { color: #fff; }
 .contentBox { background: #F5F8FC; }
 
+/* Blocos Laterais */
 .hpPurpleBlock { background: #E8EEF9; border-color: #B8C4E0; }
 .hpYellowBlock { background: #FBF9E8; border-color: #E5D98A; }
 
+/* Footer */
 .footLabel { color: #1E4A8C; }
 #footCopyright { color: #1E4A8C; }
 </style>
@@ -163,6 +184,7 @@ body { background-color: #F4F8FC; }
 
 <div id="baseDiv">
 
+  <!-- HEADER -->
   <div id="logoTagDiv">
     <a href="#"><img src="./assets/logo.png" alt="YouTube" width="123" height="63" border="0"></a>
   </div>
@@ -187,15 +209,17 @@ body { background-color: #F4F8FC; }
     </form>
   </div>
 
-  <!-- BOTÃO UPLOAD VIDEOS ESTILIZADO -->
-  <div id="uploadBtn">
-    <a href="#">
-      <span class="upload-icon"></span>
-      Upload Videos
-    </a>
-  </div>
-
   <div id="gNavDiv">
+    <div id="upload">
+      <a href="#" class="uploadBtn">
+        <span class="uploadIcon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 16h6v-6h4l-7-7-7 7h4v6zm-4 2h14v2H5v-2z"/>
+          </svg>
+        </span>
+        Upload Videos
+      </a>
+    </div>
     <div class="tab"><a href="#"><img src="./assets/tab_community_118x28.gif" width="118" height="28" alt="Community" border="0"/></a></div>
     <div class="tab"><a href="#"><img src="./assets/tab_channels_118x28.gif" width="118" height="28" alt="Channels" border="0"/></a></div>
     <div class="tab"><a href="#"><img src="./assets/tab_categories_118x28.gif" width="118" height="28" alt="Categories" border="0"/></a></div>
@@ -203,6 +227,7 @@ body { background-color: #F4F8FC; }
   </div>
   <div id="gNavBottom">&nbsp;</div>
 
+  <!-- MAIN CONTENT -->
   <div id="hpMainContent">
 
     <div id="hpFeaturedHeading">
@@ -219,6 +244,7 @@ body { background-color: #F4F8FC; }
       </div>
     </div>
 
+    <!-- ÚNICO VÍDEO FEATURED -->
     <div id="hpFeaturedList">
       <div class="vEntry">
         <table cellspacing="0" cellpadding="0" width="100%">
@@ -261,12 +287,14 @@ body { background-color: #F4F8FC; }
 
   </div>
 
+  <!-- SIDEBAR -->
   <div id="hpSideContent">
 
     <div id="hpAccountLinksDiv">
       <a href="#">Videos</a> - <a href="#">Favorites</a> - <a href="#">Playlists</a> - <a href="#">Inbox</a> - <a href="#">Subscriptions</a>
     </div>
 
+    <!-- Member Login -->
     <div class="hpContentBlock">
       <div class="headerRCBox">
         <b class="rch">
@@ -304,6 +332,7 @@ body { background-color: #F4F8FC; }
       </div>
     </div>
 
+    <!-- New at YouTube -->
     <div class="hpContentBlock">
       <div class="hpPurpleBlock">
         <div class="hpBlockHeading">New at YouTube</div>
@@ -328,6 +357,7 @@ body { background-color: #F4F8FC; }
       </div>
     </div>
 
+    <!-- Read Our Blog -->
     <div class="hpContentBlock">
       <div class="hpYellowBlock">
         <div class="hpBlockHeading">Read Our Blog</div>
@@ -342,6 +372,7 @@ body { background-color: #F4F8FC; }
       </div>
     </div>
 
+    <!-- Featured Channels -->
     <div class="hpContentBlock">
       <div class="hpPurpleBlock">
         <div class="hpBlockHeading">Featured Channels</div>
@@ -376,6 +407,7 @@ body { background-color: #F4F8FC; }
       </div>
     </div>
 
+    <!-- Categories -->
     <div class="hpContentBlock">
       <div class="hpBlockHeading">Categories</div>
       <table width="100%"><tr>
@@ -403,6 +435,7 @@ body { background-color: #F4F8FC; }
 
   <div class="spacer">&nbsp;</div>
 
+  <!-- FOOTER -->
   <div id="footerDiv">
     <div id="footContent">
       <div class="footColumnLeft">
