@@ -1,0 +1,853 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>YouTubeOPEN</title>
+<link rel="icon" href="https://web.archive.org/web/20070430120952im_/http://youtube.com/favicon.ico" type="image/x-icon">
+<style type="text/css">
+/* ====== CSS ORIGINAL YOUTUBE 2007 ====== */
+html { height: 100% }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background-color: #FFF;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+a:link, a:visited, a:active { color: #03C; }
+a:hover { text-decoration: underline; }
+a.dg { color: #333; text-decoration: none; }
+a.dg:hover { text-decoration: underline; }
+a.noul { text-decoration: none; }
+img { border: none; }
+form { margin: 0; padding: 0; }
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
+  color: #000;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  padding: 0;
+}
+h1 { font-size: 19px; }
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+hr {
+  border: 0;
+  margin-top: 12px;
+  border-top: 1px dashed #999;
+  height: 1px;
+}
+
+/* ====== UTILITÁRIOS ====== */
+.smallText { font-size: 11px; }
+.xsmallText { font-size: 10px; }
+.largeText { font-size: 14px; }
+.grayText { color: #666; }
+.bold { font-weight: bold; }
+.clear { clear: both; }
+.clearL { clear: left; }
+.spacer { clear: both; height: 1px; font-size: 1px; }
+.marT0 { margin-top: 0; }
+.marB0 { margin-bottom: 0; }
+.marB3 { margin-bottom: 3px; }
+.marB5 { margin-bottom: 5px; }
+.marL38 { margin-left: 38px; }
+.padT3 { padding-top: 3px; }
+.padB1 { padding-bottom: 1px; }
+.padB3 { padding-bottom: 3px; }
+
+/* ====== LAYOUT BASE ====== */
+#baseDiv {
+  position: relative;
+  width: 875px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+}
+
+/* ====== HEADER ====== */
+#logoTagDiv { float: left; padding-top: 6px; }
+#utilDiv {
+  height: 13px;
+  padding-bottom: 12px;
+  text-align: right;
+}
+.utilDelim { padding-left: 3px; padding-right: 3px; }
+#searchDiv {
+  padding-bottom: 8px;
+  text-align: right;
+}
+.searchField {
+  width: 250px;
+  color: #000;
+  font-size: 12px;
+}
+#gNavDiv { height: 28px; text-align: right; }
+#gNavDiv #upload { float: right; width: 220px; font-size: 1.1em; font-weight: bold; }
+#gNavDiv .tab { float: right; width: 124px; border: 0 solid #333; }
+#gNavBottom {
+  height: 24px;
+  background: #1E4A8C url(https://web.archive.org/web/20070430120952im_/http://youtube.com/img/pic_globalnav_gradation_875x24.png) top left no-repeat;
+  margin-bottom: 6px;
+}
+
+/* ====== MAIN CONTENT ====== */
+#hpMainContent { float: left; width: 555px; }
+#hpSideContent { float: right; width: 300px; }
+.hpContentBlock { margin: 5px 0; }
+.hpBlockHeading {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: #1E4A8C;
+}
+
+/* ====== ACCOUNT LINKS ====== */
+#hpAccountLinksDiv {
+  background: url(https://web.archive.org/web/20070430120952im_/http://youtube.com/img/pic_mycontrolpanel_300x30.png) top left no-repeat;
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+/* ====== DIRECTOR VIDEOS ====== */
+#hpSVidHeader {
+  font-weight: bold;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 6px;
+}
+.hpSVidEntry {
+  float: left;
+  width: 23%;
+  text-align: center;
+  padding: 0 3px;
+}
+.vimg90 {
+  width: 90px;
+  height: 70px;
+  border: 1px solid #CCC;
+}
+.vtitle { font-weight: bold; }
+
+/* ====== FEATURED VIDEOS ====== */
+#hpFeaturedHeading {
+  padding: 10px 0 0 0;
+  margin-left: 20px;
+  border-bottom: 1px solid #CCC;
+}
+#hpFeaturedHeading h1 {
+  color: #1E4A8C;
+  font-size: 19px;
+}
+#hpFeaturedMoreTop {
+  float: right;
+  padding-top: 4px;
+  font-weight: bold;
+}
+#hpFeaturedMoreBottom {
+  margin-bottom: 15px;
+  padding-top: 8px;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* ====== EDITOR ====== */
+#hpEditorImg {
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin: 5px 6px 5px 0;
+}
+#hpEditorImg img { height: 30px; margin-left: -1px; }
+#hpEditorInfo { padding-top: 4px; }
+#hpEditorHead { padding-bottom: 1px; font-size: 11px; color: #333; }
+#hpEditorAbout { float: right; padding-top: 12px; font-size: 11px; }
+
+/* ====== VIDEO ENTRIES ====== */
+.vEntry {
+  padding: 10px 0;
+  border-bottom: 1px dotted #999;
+}
+.vEntry table { width: 100%; }
+.vEntry td { vertical-align: top; }
+.vimg120 {
+  width: 120px;
+  height: 90px;
+  border: 1px solid #CCC;
+}
+.vtitle {
+  font-weight: bold;
+  font-size: 14px;
+  color: #1E4A8C;
+}
+.vtitle a { color: #1E4A8C; text-decoration: none; }
+.vtitle a:hover { text-decoration: underline; }
+.runtime {
+  font-size: 11px;
+  color: #000;
+  font-weight: bold;
+}
+.vdesc {
+  margin: 3px 0;
+  font-size: 12px;
+  color: #333;
+  line-height: 1.4;
+}
+.vfacets {
+  margin-top: 5px;
+  font-size: 11px;
+  line-height: 16px;
+}
+.hpVfacetLeft { float: left; padding: 1px 10px 0 0; }
+.hpVfacetRight { float: right; padding-top: 1px; }
+.rating img { vertical-align: middle; }
+.eLink {
+  text-decoration: none;
+  border-bottom: 1px dotted #03C;
+  color: #0033CC;
+}
+
+/* ====== QUICKLIST ICON ====== */
+#QLContainer { position: relative; }
+#QLIcon {
+  position: absolute;
+  z-index: 2;
+  width: 25px;
+  top: 66px;
+  left: 1px;
+}
+
+/* ====== SIDEBAR ====== */
+.headerRCBox { }
+.headerRCBox .rch { display: block; }
+.headerRCBox .rch * {
+  display: block;
+  height: 1px;
+  overflow: hidden;
+  background: #4A7DC9;
+}
+.headerRCBox .rch1 {
+  border-right: 1px solid #6B9AE0;
+  padding-right: 1px;
+  margin-right: 3px;
+  border-left: 1px solid #6B9AE0;
+  padding-left: 1px;
+  margin-left: 3px;
+  background: #5A8DD9;
+}
+.headerRCBox .rch2 {
+  border-right: 1px solid #8BB0F0;
+  border-left: 1px solid #8BB0F0;
+  padding: 0 1px;
+  background: #4A7DC9;
+  margin: 0 1px;
+}
+.headerRCBox .rch3 {
+  border-right: 1px solid #4A7DC9;
+  border-left: 1px solid #4A7DC9;
+  margin: 0 1px;
+}
+.headerRCBox .rch4 {
+  border-right: 1px solid #6B9AE0;
+  border-left: 1px solid #6B9AE0;
+}
+.headerRCBox .rch5 {
+  border-right: 1px solid #5A8DD9;
+  border-left: 1px solid #5A8DD9;
+}
+.headerRCBox .content {
+  background: #4A7DC9;
+  padding: 0 6px 2px 6px;
+}
+.headerTitle {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.contentBox {
+  padding: 6px;
+  border: 1px solid #CCC;
+}
+.hpLoginField {
+  width: 130px;
+  padding: 2px;
+  border: 1px solid #999;
+}
+.hpLoginForgot {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 11px;
+}
+
+/* ====== BLOCOS COLORIDOS (AZUL KAWAII) ====== */
+.hpPurpleBlock {
+  background: #E8EEF9 url(https://web.archive.org/web/20070430120952im_/http://youtube.com/img/pic_blue_top_300x400.gif) top left no-repeat;
+  padding: 8px 10px 0 10px;
+  margin-bottom: 0;
+}
+.hpYellowBlock {
+  background: #FBF9E8 url(https://web.archive.org/web/20070430120952im_/http://youtube.com/img/pic_yellow_top_300x500.gif) top left no-repeat;
+  padding: 10px 15px 0 15px;
+  margin-bottom: 0;
+}
+.hpWNentry { padding-top: 3px; }
+.hpWNimage {
+  float: left;
+  width: 30px;
+  height: 37px;
+  margin-bottom: 12px;
+}
+.hpWNdesc {
+  margin-left: 36px;
+  margin-bottom: 12px;
+}
+
+/* ====== CHANNELS ====== */
+.channelThumbContainer {
+  float: left;
+  padding: 3px;
+  height: 60px;
+  width: 134px;
+  margin-bottom: 15px;
+}
+.channelThumbUserSide {
+  float: left;
+  text-align: left;
+  width: 138px;
+}
+.channelThumbData {
+  float: left;
+  padding-left: 3px;
+}
+.memberBoxProfileContainer {
+  overflow: hidden;
+  width: 45px;
+  height: 45px;
+  float: left;
+}
+.memberBoxProfileContainer img {
+  height: 45px;
+  margin-left: -7px;
+}
+
+/* ====== GROUPS/COMMUNITIES ====== */
+.hpGroupEntry { margin-bottom: 5px; }
+.hpChannelEntry { margin-bottom: 5px; }
+.v80hEntry { clear: left; }
+.v80hEntry .vstill { float: left; }
+.v80hEntry .vimg {
+  width: 80px;
+  height: 60px;
+  border: 1px solid #CCC;
+}
+.v80hEntry .vinfo { margin-left: 86px; }
+.vimg {
+  width: 130px;
+  height: 100px;
+  border: 1px solid #CCC;
+}
+.vfacets {
+  margin: 3px 0;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+/* ====== CATEGORIES ====== */
+.catList {
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* ====== FOOTER ====== */
+#footerDiv {
+  clear: both;
+  width: 875px;
+  margin-top: 12px;
+  padding-bottom: 12px;
+  font-size: 11px;
+}
+#footContent {
+  background: #EEE;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  padding: 8px 0;
+}
+.footColumnLeft {
+  width: 215px;
+  padding-left: 10px;
+  margin-right: 20px;
+  border-right: 1px solid #CCC;
+  float: left;
+}
+.footColumnMid {
+  width: 295px;
+  margin-right: 20px;
+  border-right: 1px solid #CCC;
+  float: left;
+}
+.footColumnRight {
+  padding-right: 10px;
+  float: left;
+}
+.footLabel {
+  font-weight: bold;
+  font-size: 11px;
+  color: #1E4A8C;
+  margin-bottom: 5px;
+}
+.footValues {
+  margin-left: 0;
+  padding-bottom: 6px;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.footValues .column { float: left; margin-right: 20px; }
+#footCopyright {
+  padding-top: 12px;
+  text-align: center;
+  color: #666;
+}
+</style>
+</head>
+<body>
+
+<div id="baseDiv">
+
+  <!-- ===== HEADER ===== -->
+  <div id="logoTagDiv">
+    <a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/pic_youtubelogo_123x63.gif" alt="YouTube" width="123" height="63" border="0"></a>
+  </div>
+
+  <div id="utilDiv">
+    <b><a href="#">Sign Up</a></b>
+    <span class="utilDelim">|</span>
+    <a href="#">My Account</a>
+    <span class="utilDelim">|</span>
+    <a href="#">History</a>
+    <span class="utilDelim">|</span>
+    <a href="#">Help</a>
+    <span class="utilDelim">|</span>
+    <a href="#">Log In</a>
+  </div>
+
+  <div id="searchDiv">
+    <form>
+      <input type="text" name="search_query" maxlength="128" class="searchField" value="">
+      &nbsp;
+      <input type="submit" name="search" value="Search">
+    </form>
+  </div>
+
+  <div id="gNavDiv">
+    <div id="upload"><a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/pic_upload_130x28.gif" width="130" height="28" alt="Upload" border="0"/></a></div>
+    <div class="tab"><a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/tab_community_118x28.gif" width="118" height="28" border="0" alt="Community"/></a></div>
+    <div class="tab"><a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/tab_channels_118x28.gif" width="118" height="28" border="0" alt="Channels"/></a></div>
+    <div class="tab"><a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/tab_categories_118x28.gif" width="118" height="28" border="0" alt="Categories"/></a></div>
+    <div class="tab"><a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/tab_videos_118x28.gif" width="118" height="28" border="0" alt="Videos"/></a></div>
+  </div>
+  <div id="gNavBottom">&nbsp;</div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div id="hpMainContent">
+
+    <!-- Director Videos -->
+    <div class="hpContentBlock">
+      <div id="hpSVidHeader">Director Videos</div>
+      <div>
+        <div class="hpSVidEntry" style="margin-bottom: 0;">
+          <div class="vstill"><a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://sjc-static14.sjc.youtube.com/vi/iVh3tlVf7L8/2.jpg" class="vimg90"></a></div>
+          <div class="vtitle smallText"><a href="#">Swing Blade - Parod...</a></div>
+          <div class="vfacets" style="margin-bottom: 0;"><a href="#" class="dg">ButterTV</a></div>
+        </div>
+        <div class="hpSVidEntry" style="margin-bottom: 0;">
+          <div class="vstill"><a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://sjl-static14.sjl.youtube.com/vi/YpSpjaUNLvM/2.jpg" class="vimg90"></a></div>
+          <div class="vtitle smallText"><a href="#">Hometown Baghdad - ...</a></div>
+          <div class="vfacets" style="margin-bottom: 0;"><a href="#" class="dg">chattheplanet</a></div>
+        </div>
+        <div class="hpSVidEntry" style="margin-bottom: 0;">
+          <div class="vstill"><a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://sjl-static11.sjl.youtube.com/vi/jM8_AXe00_Y/2.jpg" class="vimg90"></a></div>
+          <div class="vtitle smallText"><a href="#">Lolla Lives-Shepard...</a></div>
+          <div class="vfacets" style="margin-bottom: 0;"><a href="#" class="dg">lollalives</a></div>
+        </div>
+        <div class="hpSVidEntry" style="margin-bottom: 0;">
+          <div class="vstill"><a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://sjl-static3.sjl.youtube.com/vi/PGwWnYO3QBQ/2.jpg" class="vimg90"></a></div>
+          <div class="vtitle smallText"><a href="#">Black Anthem</a></div>
+          <div class="vfacets" style="margin-bottom: 0;"><a href="#" class="dg">pdrop</a></div>
+        </div>
+        <div class="clearL" style="height: 1px;"></div>
+      </div>
+    </div>
+
+    <!-- Featured Videos Heading -->
+    <div id="hpFeaturedHeading">
+      <div id="hpFeaturedMoreTop"><a href="#">See More Featured Videos</a></div>
+      <h1>Featured Videos</h1>
+    </div>
+
+    <!-- Editor Info -->
+    <div id="hpEditorDiv">
+      <div id="hpEditorAbout"><a href="#">Become a guest editor</a></div>
+      <div id="hpEditorImg"><a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://sjl-static4.sjl.youtube.com/vi/MaWi9JfOk3Y/2.jpg" width="30" height="30" alt="editor image" border="0"/></a></div>
+      <div id="hpEditorInfo">
+        <div id="hpEditorHead">Featured Videos selected by:</div>
+        <b><a href="#">YouTube</a></b>
+      </div>
+    </div>
+
+    <!-- ===== ÚNICO VÍDEO FEATURED ===== -->
+    <div id="hpFeaturedList">
+      <div class="vEntry">
+        <table cellspacing="0" cellpadding="0" width="100%">
+          <tr>
+            <td width="130" valign="top" rowspan="2">
+              <div id="QLContainer">
+                <a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://sjc-static16.sjc.youtube.com/vi/Lb4jOCAr8ow/2.jpg" class="vimg120"/></a>
+                <div id="QLIcon"><a href="#" title="Add Video to QuickList"><img border="0" src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/icn_add_20x20.gif" alt="Add Video to QuickList"></a></div>
+              </div>
+            </td>
+            <td valign="top">
+              <div class="vtitle">
+                <a href="#">Worms Making Music II</a><br/>
+                <span class="runtime">01:29</span>
+              </div>
+              <div class="vdesc">
+                A solo worm performing a thoughtful little number. No worms were hurt.<br/><br/>
+                Following a gruelling audition process, one solo worm was hand selected to perform its own music, without proviso, upon a specially adapted and destabilised FM synthesis circuit disembowelled from a Yamaha PSS-470. For one day, this worm was treated like royalty; whisked around London's swankiest mud spas and hermaphrodite clubs, before spending an evening at the very best hotel...
+                <span class="smallText">(<a href="#" class="eLink">more</a>)</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td valign="bottom">
+              <div class="vfacets">
+                <div class="hpVfacetRight"><span class="grayText">More in</span> <a href="#">Howto &amp; DIY</a></div>
+                <div class="hpVfacetLeft">
+                  <span class="grayText">From:</span> <a href="#" class="dg">ashfordaisyak</a>
+                </div>
+                <div class="hpVfacetLeft">
+                  <span class="grayText">Views:</span> 858
+                </div>
+                <div style="white-space: nowrap">
+                  <img class="rating" src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/icn_star_full_11x11.gif" align="top">
+                  <img class="rating" src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/icn_star_full_11x11.gif" align="top">
+                  <img class="rating" src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/icn_star_full_11x11.gif" align="top">
+                  <img class="rating" src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/icn_star_half_11x11.gif" align="top">
+                  <img class="rating" src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/icn_star_empty_11x11.gif" align="top">
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="hpFeaturedMoreBottom"><a href="#">See More Featured Videos</a></div>
+
+  </div>
+
+  <!-- ===== SIDEBAR ===== -->
+  <div id="hpSideContent">
+
+    <!-- Account Links -->
+    <div id="hpAccountLinksDiv">
+      <div class="marL38">
+        <a href="#">Videos</a>
+        -
+        <a href="#">Favorites</a>
+        -
+        <a href="#">Playlists</a>
+        -
+        <a href="#">Inbox</a>
+        -
+        <a href="#">Subscriptions</a>
+      </div>
+    </div>
+
+    <!-- Member Login com rounded corners -->
+    <div class="hpContentBlock">
+      <div class="headerRCBox">
+        <b class="rch">
+          <b class="rch1"><b></b></b>
+          <b class="rch2"><b></b></b>
+          <b class="rch3"></b>
+          <b class="rch4"></b>
+          <b class="rch5"></b>
+        </b>
+        <div class="content"><span class="headerTitle"> Member Login </span></div>
+      </div>
+      <div class="contentBox">
+        <table>
+          <form>
+            <tr>
+              <td><b>YouTube Username:</b></td>
+              <td><input tabindex="1" type="text" name="username" value="" class="hpLoginField"></td>
+            </tr>
+            <tr>
+              <td><b>YouTube Password:</b></td>
+              <td><input tabindex="2" type="password" name="password" class="hpLoginField"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <div style="float: right;"><b><a href="#">Sign Up</a></b></div>
+                <div><input type="submit" value="Login"></div>
+              </td>
+            </tr>
+          </form>
+        </table>
+        <div class="hpLoginForgot smallText">
+          <p align="center" class="marT0 marB0"><a href="#">Forgot Username</a> | <a href="#">Forgot Password</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- New at YouTube - Azul -->
+    <div class="hpContentBlock">
+      <div class="hpPurpleBlock">
+        <div class="hpBlockHeading">New at YouTube</div>
+        <div class="hpWNentry">
+          <div class="hpWNimage">
+            <a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/pic_home_chnlcustom_30x37.gif" border="0"></a>
+          </div>
+          <div class="hpWNdesc">
+            <b><a href="#">Channel Customizations</a></b><br>
+            New channel customizations abound! Check them out in your channel settings.
+          </div>
+        </div>
+        <div class="hpWNentry">
+          <div class="hpWNimage">
+            <a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/pic_home_cats_30x37.gif" border="0"></a>
+          </div>
+          <div class="hpWNdesc">
+            <b><a href="#">Categories</a></b><br>
+            The Categories section has been given a face lift and now shows more featured videos and channels.
+          </div>
+        </div>
+        <div class="hpWNentry">
+          <div class="hpWNimage">
+            <a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/pic_home_testtube_30x37.gif" border="0"></a>
+          </div>
+          <div class="hpWNdesc">
+            <b><a href="#">TestTube</a></b><br>
+            More new (and improved) YouTube features in development! Now with Active Sharing.
+          </div>
+        </div>
+        <div style="font-size: 1px; height: 1px;"><br/></div>
+      </div>
+      <img style="display: block;" src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/pic_purple_bottom_300x8.gif"/>
+    </div>
+
+    <!-- Read Our Blog - Amarelo -->
+    <div class="hpContentBlock">
+      <div class="hpYellowBlock">
+        <div class="hpBlockHeading">Read Our Blog</div>
+        <div class="padB3"><b>Site Update</b></div>
+        The highly trained monkeys have been very, very busy here at the Tube, rolling out these changes to the site:
+        <br><br>
+        <b>PUT YOUR VIDEOS AND FAVORITES IN THE ORDER <i>YOU</i> CHOOSE</b><br>
+        Re-arrange your videos and favorites however you like!
+        <div class="smallText padT3">
+          <b><a href="#">Read more...</a></b>
+        </div>
+      </div>
+      <img style="display: block;" src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/pic_yellow_bottom_300x8.gif"/>
+    </div>
+
+    <!-- Featured Channels - Azul -->
+    <div class="hpContentBlock">
+      <div class="hpPurpleBlock">
+        <div class="hpBlockHeading">Featured Channels</div>
+        <div class="channelThumbContainer">
+          <div class="channelThumbUserSide">
+            <div class="marB3"><b><a href="#">clubplanetdotcom</a></b></div>
+            <div class="memberBoxProfileContainer"><a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://sjc-static14.sjc.youtube.com/vi/_dwOcDmByj4/2.jpg" alt="clubplanetdotcom"></a></div>
+            <div class="channelThumbData">
+              <div class="xsmallText">
+                <div class="padB1"><span class="grayText">Videos:</span> 23</div>
+                <div class="padB1"><span class="grayText">Subs: </span> 16</div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="channelThumbContainer">
+          <div class="channelThumbUserSide">
+            <div class="marB3"><b><a href="#">cadencestar</a></b></div>
+            <div class="memberBoxProfileContainer"><a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://img.youtube.com/vi/r0E-0ntoNWo/2.jpg" alt="cadencestar"></a></div>
+            <div class="channelThumbData">
+              <div class="xsmallText">
+                <div class="padB1"><span class="grayText">Videos:</span> 17</div>
+                <div class="padB1"><span class="grayText">Subs: </span> 344</div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="smallText" style="text-align: right;"><a href="#">See More Channels</a></div>
+      </div>
+      <img style="display: block;" src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/pic_purple_bottom_300x8.gif"/>
+    </div>
+
+    <!-- Featured Communities - Amarelo -->
+    <div class="hpContentBlock">
+      <div class="hpYellowBlock">
+        <div class="hpBlockHeading">Featured Communities</div>
+        <div class="hpGroupEntry v80hEntry">
+          <div class="vstill"><a href="#"><img class="vimg" src="https://web.archive.org/web/20070430120952im_/http://img.youtube.com/vi/rLMG85whCMQ/2.jpg"/></a></div>
+          <div class="vinfo">
+            <b><a href="#">TurnHereTravel</a></b>
+            <div class="vfacets"> 52 Videos | 11 Discussions</div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="hpGroupEntry v80hEntry">
+          <div class="vstill"><a href="#"><img class="vimg" src="https://web.archive.org/web/20070430120952im_/http://sjl-static13.sjl.youtube.com/vi/uh2FBhPGcHg/2.jpg"/></a></div>
+          <div class="vinfo">
+            <b><a href="#">TopThisTVChallenge</a></b>
+            <div class="vfacets"> 117 Videos | 1 Discussions</div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="smallText" style="text-align: right;"><a href="#">See More Communities</a></div>
+      </div>
+      <img style="display: block;" src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/pic_yellow_bottom_300x8.gif"/>
+    </div>
+
+    <!-- Mobile Videos - Azul -->
+    <div class="hpContentBlock">
+      <div class="hpPurpleBlock">
+        <div class="hpBlockHeading">Popular Videos for Mobile Devices</div>
+        <div class="hpChannelEntry v80hEntry">
+          <div class="vstill"><a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://img.youtube.com/vi/trXE7ngrzFo/2.jpg" class="vimg" style="background: #333;"></a></div>
+          <div class="vinfo">
+            <b><a href="#">The Doghouse JV and Elvis</a></b>
+            <div class="vfacets">
+              <span class="grayText">From:</span> <a href="#">doghousevideos</a><br/>
+              <span class="grayText">Views:</span> 6379<br/>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="hpChannelEntry v80hEntry">
+          <div class="vstill"><a href="#"><img src="https://web.archive.org/web/20070430120952im_/http://sjc-static3.sjc.youtube.com/vi/U1KRFG5oo0c/2.jpg" class="vimg" style="background: #333;"></a></div>
+          <div class="vinfo">
+            <b><a href="#">How To Cook Lizard Eggs</a></b>
+            <div class="vfacets">
+              <span class="grayText">From:</span> <a href="#">drewtoothpaste</a><br/>
+              <span class="grayText">Views:</span> 36772<br/>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="smallText" style="text-align: right;">
+          <a href="#">See more mobile videos</a>
+        </div>
+      </div>
+      <img style="display: block;" src="https://web.archive.org/web/20070430120952im_/http://youtube.com/img/pic_purple_bottom_300x8.gif"/>
+    </div>
+
+    <!-- Categories -->
+    <div class="hpContentBlock">
+      <div class="hpBlockHeading">Categories</div>
+      <table width="100%"><tr>
+        <td width="20">&nbsp;</td>
+        <td>
+          <a href="#">Autos &amp; Vehicles</a><br/>
+          <a href="#">Comedy</a><br/>
+          <a href="#">Entertainment</a><br/>
+          <a href="#">Film &amp; Animation</a><br/>
+          <a href="#">Gadgets &amp; Games</a><br/>
+          <a href="#">How-to &amp; DIY</a><br/>
+        </td>
+        <td>
+          <a href="#">Music</a><br/>
+          <a href="#">News &amp; Politics</a><br/>
+          <a href="#">People &amp; Blogs</a><br/>
+          <a href="#">Pets &amp; Animals</a><br/>
+          <a href="#">Sports</a><br/>
+          <a href="#">Travel &amp; Places</a><br/>
+        </td>
+      </tr></table>
+    </div>
+
+  </div>
+
+  <div class="spacer">&nbsp;</div>
+
+  <!-- ===== FOOTER ===== -->
+  <div id="footerDiv">
+    <div id="footContent">
+      <div class="footColumnLeft">
+        <div class="footLabel">Your Account</div>
+        <div class="footValues">
+          <div class="column">
+            <a href="#">Videos</a><br/>
+            <a href="#">Favorites</a><br/>
+          </div>
+          <div class="column">
+            <a href="#">Playlists</a><br/>
+            <a href="#">Inbox</a><br/>
+          </div>
+          <div class="column">
+            <a href="#">Subscriptions</a><br/>
+            <a href="#">more...</a><br/>
+          </div>
+        </div>
+      </div>
+      <div class="footColumnMid">
+        <div class="footLabel">Help &amp; Info</div>
+        <div class="footValues">
+          <div class="column">
+            <a href="#">Help Center</a><br/>
+            <a href="#">Video Toolbox</a><br/>
+          </div>
+          <div class="column">
+            <a href="#">Developer APIs</a><br/>
+            <a href="#">Safety Tips</a><br/>
+          </div>
+          <div class="column">
+            <a href="#">Copyright Notices</a><br/>
+            <a href="#">Code of Conduct</a><br/>
+          </div>
+        </div>
+      </div>
+      <div class="footColumnRight">
+        <div class="footLabel">YouTube</div>
+        <div class="footValues">
+          <div class="column">
+            <a href="#">Company Info</a><br/>
+            <a href="#">TestTube</a><br/>
+          </div>
+          <div class="column">
+            <a href="#">Terms of Use</a><br/>
+            <a href="#">Privacy Policy</a><br/>
+          </div>
+          <div class="column">
+            <a href="#">Blog</a><br/>
+            <a href="#">Contact</a><br/>
+          </div>
+          <div class="column">
+            <a href="#">Press</a><br/>
+            <a href="#">Jobs</a><br/>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div id="footCopyright">
+      Copyright &copy; 2007 YouTube, Inc.
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
