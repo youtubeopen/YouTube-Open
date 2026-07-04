@@ -87,7 +87,10 @@ margin-bottom: 5px;
 }
 .tableVideoStats {
 width: 100%;
+background-image: url(/img/table_results_selected_bg.gif);
+background-repeat: repeat-x;
 background-color: #FFFFCC;
+background-position: left top;
 border: 1px dashed #CCCC66;
 padding-top: 5px;
 padding-bottom: 15px;
@@ -119,12 +122,18 @@ padding-left: 10px;
 }
 /* Modules */
 .moduleEntrySelected {
+background-image: url(/img/table_results_selected_bg.gif);
+background-repeat: repeat-x;
 background-color: #FFFFCC;
+background-position: left top;
 border-bottom: 1px dashed #999999;
 padding: 10px 10px 0px 10px;
 }
 .moduleEntry {
 background-color: #DDD;
+background-image: url(/img/table_results_bg.gif);
+background-position: left top;
+background-repeat: repeat-x;
 border-bottom: 1px dashed #999999;
 padding: 10px;
 }
@@ -172,6 +181,9 @@ border-bottom: 1px dashed #999;
 }
 .moduleFeatured {
 background-color: #DDD;
+background-image: url(/img/table_results_bg.gif);
+background-position: left top;
+background-repeat: repeat-x;
 border-bottom: 1px dashed #999999;
 padding: 5px 5px 15px 5px;
 }
@@ -202,12 +214,18 @@ color: #444;
 .moduleFrameEntrySelected {
 width: 270px;
 background-color: #FFFFCC;
+background-image: url(/img/table_results_selected_bg.gif);
+background-repeat: repeat-x;
+background-position: left top;
 border-bottom: 1px dashed #999999;
 padding: 8px;
 }
 .moduleFrameEntry {
 width: 270px;
 background-color: #DDD;
+background-image: url(/img/table_results_bg.gif);
+background-position: left top;
+background-repeat: repeat-x;
 border-bottom: 1px dashed #999999;
 padding: 8px;
 }
@@ -304,6 +322,9 @@ color: #333333;
 }
 .watchTable {
 background-color: #DDDDDD;
+background-image: url(/img/table_results_bg.gif);
+background-repeat: repeat-x;
+background-position: left top;
 border-bottom: 1px dashed #999999;
 padding: 5px;
 padding-bottom: 10px;
@@ -374,6 +395,9 @@ border-left: 1px solid #CCCCCC;
 }
 .vertLeftDashTable {
 border-left: 1px dashed #CCCCCC;
+background-image: url(/img/long_grad_bg.jpg);
+background-repeat: repeat-x;
+background-repeat: repeat-y;
 }
 .commentsEntry {
 font-size: 11px;
@@ -528,6 +552,7 @@ margin-top: -10px;
 width: 130px;
 height: 82px;
 padding: 1px 0px 0px 1px;
+background: url(/img/pic_stackplaylists_130x82.gif); background-repeat: no-repeat;
 }
 .playlistLinks a
 {
@@ -1234,7 +1259,7 @@ width: 875px;
 margin-left: auto;
 margin-right: auto;
 }
-#logoTagDiv { float: left;  padding-top: 6px; }
+#logoTagDiv { float: left; padding-top: 6px; }
 #logoHomeTip {
 display: none;
 position: absolute;
@@ -1274,6 +1299,7 @@ margin-bottom: 10px;
 }
 #gNavBottom {
 height: 24px;
+background: #DDD url(/img/pic_globalnav_gradation_875x24.png) top left no-repeat;
 margin-bottom: 6px;
 }
 #accountQuickLinks { font-size: 11px; text-align: right; }
@@ -1740,6 +1766,7 @@ width: 300px;
 .hpBlockHeading { font-size: 16px; font-weight: bold; padding-bottom: 5px; }
 .hpBlockHeadingGray { color: #4A4A4A; }
 #hpAccountLinksDiv {
+background: url(/img/pic_mycontrolpanel_300x30.png) top left no-repeat;
 width: 300px;
 height: 30px;
 line-height: 30px;
@@ -1898,8 +1925,8 @@ font-weight: bold;
 }
 .hpVfacetRight { float: right; padding-top: 1px; }
 .hpVfacetLeft { float: left; padding: 1px 10px 0px 0px; }
-.hpPurpleBlock { background: #EBEDF3; padding: 8px 10px 0px 10px; margin-bottom: 0px; }
-.hpYellowBlock { background: #FBF9E8; padding: 10px 15px 0px 15px; margin-bottom: 0px; }
+.hpPurpleBlock { background: #EBEDF3 url(/img/pic_blue_top_300x400.gif) top left no-repeat; padding: 8px 10px 0px 10px; margin-bottom: 0px; }
+.hpYellowBlock { background: #FBF9E8 url(/img/pic_yellow_top_300x500.gif) top left no-repeat; padding: 10px 15px 0px 15px; margin-bottom: 0px; }
 /* Category Elements */
 .catNameHeader {
 font-size: 16px;
@@ -1930,6 +1957,7 @@ font-weight: bold;
 margin-bottom: 6px;
 }
 .catBox {
+background: url(/img/pic_catbox_174x100.gif) top left no-repeat;
 padding: 8px 0px 0px 8px;
 height: 100px;
 }
@@ -2323,6 +2351,12 @@ width: 790px;
 margin: 10px 0;
 padding: 10px 0 0 160px;
 }
+#pitchSection #popularChannels {
+background: url(../img/pic_postsignup_picks_790x155.gif) top left no-repeat;
+}
+#pitchSection #partnerChannels {
+background: url(../img/pic_postsignup_partners_790x155.gif) top left no-repeat;
+}
 .pitchedItem {
 width: 135px;
 margin: 0 22px 0 0px;
@@ -2440,7 +2474,27 @@ a:link, a:visited, a:active { color: #0033CC; }
 #hpFeaturedHeading h1 { color: #1E4A8C; }
 .vtitle a { color: #1E4A8C; }
 .vtitle { color: #1E4A8C; }
-#gNavBottom { background: #1E4A8C; border-radius: 0 0 8px 8px; }
+
+/* Logo - no stretch, fit naturally, larger */
+#logoTagDiv {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#logoTagDiv img {
+  width: auto;
+  height: auto;
+  max-width: 180px;
+  max-height: none;
+  display: block;
+}
+
+/* gNavBottom - original gradient recreated with CSS */
+#gNavBottom {
+  height: 24px;
+  background: linear-gradient(to bottom, #5A8DD9 0%, #3A6DB9 40%, #1E4A8C 100%);
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 6px;
+}
 
 /* Login Box Azul */
 .headerRCBox .rch * { background: #4A7DC9; }
@@ -2480,7 +2534,7 @@ a:link, a:visited, a:active { color: #0033CC; }
 
   <!-- HEADER -->
   <div id="logoTagDiv">
-    <a href="#"><img src="./assets/logo.png" alt="YouTube" width="123" height="63" border="0"></a>
+    <a href="#"><img src="./assets/logo.png" alt="YouTube"></a>
   </div>
 
   <div id="utilDiv">
