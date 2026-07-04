@@ -4,16 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>YouTube - Broadcast Yourself.</title>
 <style type="text/css">
-/* ====== CSS ORIGINAL YOUTUBE 2007 ====== */
+/* =========================================
+   CSS ORIGINAL YOUTUBE 2007 (LIMPO)
+   ========================================= */
 html { height: 100% }
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  background-color: #FFF;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
+body { font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: #FFF; color: #000; margin: 0; padding: 0; }
 a:link, a:visited, a:active { color: #03C; }
 a:hover { text-decoration: underline; }
 a.dg { color: #333; text-decoration: none; }
@@ -21,402 +16,143 @@ a.dg:hover { text-decoration: underline; }
 a.noul { text-decoration: none; }
 img { border: none; }
 form { margin: 0; padding: 0; }
-h1,h2,h3,h4,h5,h6 {
-  font-weight: bold;
-  color: #000;
-  margin-top: 5px;
-  margin-bottom: 3px;
-  padding: 0;
-}
-h1 { font-size: 19px; }
-h2 { font-size: 16px; }
-h3 { font-size: 14px; }
-hr {
-  border: 0;
-  margin-top: 12px;
-  border-top: 1px dashed #999;
-  height: 1px;
-}
+h1,h2,h3,h4,h5,h6 { font-weight: bold; color: #000; margin-top: 5px; margin-bottom: 3px; padding: 0; }
+h1 { font-size: 19px; } h2 { font-size: 16px; } h3 { font-size: 14px; }
+hr { border: 0; margin-top: 12px; border-top: 1px dashed #999; height: 1px; }
 
-/* ====== UTILITÁRIOS ====== */
-.smallText { font-size: 11px; }
-.xsmallText { font-size: 10px; }
-.largeText { font-size: 14px; }
-.grayText { color: #666; }
-.bold { font-weight: bold; }
-.clear { clear: both; }
-.clearL { clear: left; }
-.spacer { clear: both; height: 1px; font-size: 1px; }
-.marT0 { margin-top: 0; }
-.marB0 { margin-bottom: 0; }
-.marB3 { margin-bottom: 3px; }
-.marB5 { margin-bottom: 5px; }
-.marL38 { margin-left: 38px; }
-.padT3 { padding-top: 3px; }
-.padB1 { padding-bottom: 1px; }
-.padB3 { padding-bottom: 3px; }
+/* Utilitários */
+.smallText { font-size: 11px; } .xsmallText { font-size: 10px; } .largeText { font-size: 14px; }
+.grayText { color: #666; } .bold { font-weight: bold; }
+.clear { clear: both; } .clearL { clear: left; } .spacer { clear: both; height: 1px; font-size: 1px; }
+.marT0 { margin-top: 0; } .marB0 { margin-bottom: 0; } .marB3 { margin-bottom: 3px; } .marL38 { margin-left: 38px; }
+.padT3 { padding-top: 3px; } .padB1 { padding-bottom: 1px; } .padB3 { padding-bottom: 3px; }
 
-/* ====== LAYOUT BASE ====== */
-#baseDiv {
-  position: relative;
-  width: 875px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 5px;
-}
-
-/* ====== HEADER ====== */
+/* Layout Base */
+#baseDiv { position: relative; width: 875px; margin-left: auto; margin-right: auto; padding-top: 5px; }
 #logoTagDiv { float: left; padding-top: 6px; }
-#utilDiv {
-  height: 13px;
-  padding-bottom: 12px;
-  text-align: right;
-}
+#utilDiv { height: 13px; padding-bottom: 12px; text-align: right; }
 .utilDelim { padding-left: 3px; padding-right: 3px; }
-#searchDiv {
-  padding-bottom: 8px;
-  text-align: right;
-}
-.searchField {
-  width: 250px;
-  color: #000;
-  font-size: 12px;
-}
+#searchDiv { padding-bottom: 8px; text-align: right; }
+.searchField { width: 250px; color: #000; font-size: 12px; }
 #gNavDiv { height: 28px; text-align: right; }
-#gNavDiv #upload { float: right; width: 220px; font-size: 1.1em; font-weight: bold; }
-#gNavDiv .tab { float: right; width: 124px; border: 0 solid #333; }
-#gNavBottom {
-  height: 24px;
-  background: #1E4A8C;
-  margin-bottom: 6px;
-}
+#gNavDiv #upload { float: right; width: 220px; font-size: 1.1em; font-weight: bold; text-align: center; line-height: 28px; }
+#gNavDiv #upload a { color: #fff; text-decoration: none; display: block; }
+#gNavDiv .tab { float: right; width: 124px; text-align: center; line-height: 28px; }
+#gNavDiv .tab a { color: #fff; text-decoration: none; font-weight: bold; display: block; }
+#gNavDiv .tab a:hover { text-decoration: underline; }
+#gNavBottom { height: 24px; margin-bottom: 6px; }
 
-/* ====== MAIN CONTENT ====== */
+/* Main Content */
 #hpMainContent { float: left; width: 555px; }
 #hpSideContent { float: right; width: 300px; }
 .hpContentBlock { margin: 5px 0; }
-.hpBlockHeading {
-  font-size: 16px;
-  font-weight: bold;
-  padding-bottom: 5px;
-  color: #1E4A8C;
-}
+.hpBlockHeading { font-size: 16px; font-weight: bold; padding-bottom: 5px; }
+#hpSVidHeader { font-weight: bold; font-size: 12px; color: #999; margin-bottom: 6px; }
+.hpSVidEntry { float: left; width: 23%; text-align: center; padding: 0 3px; }
 
-/* ====== ACCOUNT LINKS ====== */
-#hpAccountLinksDiv {
-  width: 300px;
-  height: 30px;
-  line-height: 30px;
-  font-size: 11px;
-  margin-bottom: 10px;
-}
-
-/* ====== DIRECTOR VIDEOS ====== */
-#hpSVidHeader {
-  font-weight: bold;
-  font-size: 12px;
-  color: #999;
-  margin-bottom: 6px;
-}
-.hpSVidEntry {
-  float: left;
-  width: 23%;
-  text-align: center;
-  padding: 0 3px;
-}
-.vimg90 {
-  width: 90px;
-  height: 70px;
-  border: 1px solid #CCC;
-}
-.vtitle { font-weight: bold; }
-
-/* ====== FEATURED VIDEOS ====== */
-#hpFeaturedHeading {
-  padding: 10px 0 0 0;
-  margin-left: 20px;
-  border-bottom: 1px solid #CCC;
-}
-#hpFeaturedHeading h1 {
-  color: #1E4A8C;
-  font-size: 19px;
-}
-#hpFeaturedMoreTop {
-  float: right;
-  padding-top: 4px;
-  font-weight: bold;
-}
-#hpFeaturedMoreBottom {
-  margin-bottom: 15px;
-  padding-top: 8px;
-  text-align: right;
-  font-weight: bold;
-}
-
-/* ====== EDITOR ====== */
-#hpEditorImg {
-  overflow: hidden;
-  width: 30px;
-  height: 30px;
-  float: left;
-  margin: 5px 6px 5px 0;
-}
-#hpEditorImg img { height: 30px; margin-left: -1px; }
+/* Featured Videos */
+#hpFeaturedHeading { padding: 10px 0 0 0; margin-left: 20px; border-bottom: 1px solid #CCC; }
+#hpFeaturedMoreTop { float: right; padding-top: 4px; font-weight: bold; }
+#hpFeaturedMoreBottom { margin-bottom: 15px; padding-top: 8px; text-align: right; font-weight: bold; }
+#hpEditorImg { overflow: hidden; width: 30px; height: 30px; float: left; margin: 5px 6px 5px 0; background: #ccc; }
 #hpEditorInfo { padding-top: 4px; }
 #hpEditorHead { padding-bottom: 1px; font-size: 11px; color: #333; }
 #hpEditorAbout { float: right; padding-top: 12px; font-size: 11px; }
 
-/* ====== VIDEO ENTRIES ====== */
-.vEntry {
-  padding: 10px 0;
-  border-bottom: 1px dotted #999;
-}
+/* Video Entries */
+.vEntry { padding: 10px 0; border-bottom: 1px dotted #999; }
 .vEntry table { width: 100%; }
 .vEntry td { vertical-align: top; }
-.vimg120 {
-  width: 120px;
-  height: 90px;
-  border: 1px solid #CCC;
-}
-.vtitle {
-  font-weight: bold;
-  font-size: 14px;
-  color: #1E4A8C;
-}
-.vtitle a { color: #1E4A8C; text-decoration: none; }
+.vimg120 { width: 120px; height: 90px; border: 1px solid #CCC; background: #eee; display: block; text-align: center; line-height: 90px; color: #999; }
+.vtitle { font-weight: bold; font-size: 14px; }
+.vtitle a { text-decoration: none; }
 .vtitle a:hover { text-decoration: underline; }
-.runtime {
-  font-size: 11px;
-  color: #000;
-  font-weight: bold;
-}
-.vdesc {
-  margin: 3px 0;
-  font-size: 12px;
-  color: #333;
-  line-height: 1.4;
-}
-.vfacets {
-  margin-top: 5px;
-  font-size: 11px;
-  line-height: 16px;
-}
+.runtime { font-size: 11px; color: #000; font-weight: bold; }
+.vdesc { margin: 3px 0; font-size: 12px; color: #333; line-height: 1.4; }
+.vfacets { margin-top: 5px; font-size: 11px; line-height: 16px; }
 .hpVfacetLeft { float: left; padding: 1px 10px 0 0; }
 .hpVfacetRight { float: right; padding-top: 1px; }
-.rating img { vertical-align: middle; }
-.eLink {
-  text-decoration: none;
-  border-bottom: 1px dotted #03C;
-  color: #0033CC;
-}
+.eLink { text-decoration: none; border-bottom: 1px dotted #03C; color: #0033CC; }
+.rating { font-size: 14px; color: #f90; letter-spacing: 2px; }
 
-/* ====== QUICKLIST ICON ====== */
-#QLContainer { position: relative; }
-#QLIcon {
-  position: absolute;
-  z-index: 2;
-  width: 25px;
-  top: 66px;
-  left: 1px;
-}
-
-/* ====== SIDEBAR ====== */
-.headerRCBox { }
+/* Sidebar & Boxes */
+#hpAccountLinksDiv { width: 300px; height: 30px; line-height: 30px; font-size: 11px; margin-bottom: 10px; background: #eef; border-bottom: 1px solid #ccc; text-align: center; }
+.headerRCBox { margin-bottom: 0; }
 .headerRCBox .rch { display: block; }
-.headerRCBox .rch * {
-  display: block;
-  height: 1px;
-  overflow: hidden;
-  background: #4A7DC9;
-}
-.headerRCBox .rch1 {
-  border-right: 1px solid #6B9AE0;
-  padding-right: 1px;
-  margin-right: 3px;
-  border-left: 1px solid #6B9AE0;
-  padding-left: 1px;
-  margin-left: 3px;
-  background: #5A8DD9;
-}
-.headerRCBox .rch2 {
-  border-right: 1px solid #8BB0F0;
-  border-left: 1px solid #8BB0F0;
-  padding: 0 1px;
-  background: #4A7DC9;
-  margin: 0 1px;
-}
-.headerRCBox .rch3 {
-  border-right: 1px solid #4A7DC9;
-  border-left: 1px solid #4A7DC9;
-  margin: 0 1px;
-}
-.headerRCBox .rch4 {
-  border-right: 1px solid #6B9AE0;
-  border-left: 1px solid #6B9AE0;
-}
-.headerRCBox .rch5 {
-  border-right: 1px solid #5A8DD9;
-  border-left: 1px solid #5A8DD9;
-}
-.headerRCBox .content {
-  background: #4A7DC9;
-  padding: 0 6px 2px 6px;
-}
-.headerTitle {
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-}
-.contentBox {
-  padding: 6px;
-  border: 1px solid #CCC;
-}
-.hpLoginField {
-  width: 130px;
-  padding: 2px;
-  border: 1px solid #999;
-}
-.hpLoginForgot {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 11px;
-}
+.headerRCBox .rch * { display: block; height: 1px; overflow: hidden; }
+.headerRCBox .rch1 { margin: 0 3px; border-right: 1px solid; border-left: 1px solid; padding: 0 1px; }
+.headerRCBox .rch2 { margin: 0 1px; border-right: 1px solid; border-left: 1px solid; padding: 0 1px; }
+.headerRCBox .rch3 { margin: 0 1px; border-right: 1px solid; border-left: 1px solid; }
+.headerRCBox .rch4 { border-right: 1px solid; border-left: 1px solid; }
+.headerRCBox .rch5 { border-right: 1px solid; border-left: 1px solid; }
+.headerRCBox .content { padding: 0 6px 2px 6px; }
+.headerTitle { font-size: 14px; font-weight: bold; }
+.contentBox { padding: 6px; border: 1px solid #CCC; border-top: none; }
+.hpLoginField { width: 130px; padding: 2px; border: 1px solid #999; }
+.hpLoginForgot { padding-top: 10px; text-align: center; font-size: 11px; }
 
-/* ====== BLOCOS COLORIDOS (AZUL KAWAII) ====== */
-.hpPurpleBlock {
-  background: #E8EEF9;
-  padding: 8px 10px 0 10px;
-  margin-bottom: 0;
-}
-.hpYellowBlock {
-  background: #FBF9E8;
-  padding: 10px 15px 0 15px;
-  margin-bottom: 0;
-}
-.hpWNentry { padding-top: 3px; }
-.hpWNimage {
-  float: left;
-  width: 30px;
-  height: 37px;
-  margin-bottom: 12px;
-}
-.hpWNdesc {
-  margin-left: 36px;
-  margin-bottom: 12px;
-}
+.hpPurpleBlock { padding: 8px 10px 10px 10px; margin-bottom: 10px; border: 1px solid #b8c4e0; }
+.hpYellowBlock { padding: 10px 15px; margin-bottom: 10px; border: 1px solid #e5d98a; }
+.hpWNentry { padding-top: 3px; margin-bottom: 10px; }
+.hpWNdesc { font-size: 12px; line-height: 1.4; }
 
-/* ====== CHANNELS ====== */
-.channelThumbContainer {
-  float: left;
-  padding: 3px;
-  height: 60px;
-  width: 134px;
-  margin-bottom: 15px;
-}
-.channelThumbUserSide {
-  float: left;
-  text-align: left;
-  width: 138px;
-}
-.channelThumbData {
-  float: left;
-  padding-left: 3px;
-}
-.memberBoxProfileContainer {
-  overflow: hidden;
-  width: 45px;
-  height: 45px;
-  float: left;
-}
-.memberBoxProfileContainer img {
-  height: 45px;
-  margin-left: -7px;
-}
+.channelThumbContainer { float: left; padding: 3px; width: 134px; margin-bottom: 15px; }
+.channelThumbUserSide { float: left; text-align: left; width: 138px; }
+.channelThumbData { float: left; padding-left: 3px; }
 
-/* ====== GROUPS/COMMUNITIES ====== */
-.hpGroupEntry { margin-bottom: 5px; }
-.hpChannelEntry { margin-bottom: 5px; }
-.v80hEntry { clear: left; }
-.v80hEntry .vstill { float: left; }
-.v80hEntry .vimg {
-  width: 80px;
-  height: 60px;
-  border: 1px solid #CCC;
-}
-.v80hEntry .vinfo { margin-left: 86px; }
-.vimg {
-  width: 130px;
-  height: 100px;
-  border: 1px solid #CCC;
-}
-.vfacets {
-  margin: 3px 0;
-  font-size: 11px;
-  line-height: 13px;
-}
+.hpGroupEntry { margin-bottom: 10px; }
+.hpChannelEntry { margin-bottom: 10px; }
 
-/* ====== CATEGORIES ====== */
-.catList {
-  font-size: 12px;
-  line-height: 1.8;
-}
-
-/* ====== FOOTER ====== */
-#footerDiv {
-  clear: both;
-  width: 875px;
-  margin-top: 12px;
-  padding-bottom: 12px;
-  font-size: 11px;
-}
-#footContent {
-  background: #EEE;
-  border-top: 1px solid #CCC;
-  border-bottom: 1px solid #CCC;
-  padding: 8px 0;
-}
-.footColumnLeft {
-  width: 215px;
-  padding-left: 10px;
-  margin-right: 20px;
-  border-right: 1px solid #CCC;
-  float: left;
-}
-.footColumnMid {
-  width: 295px;
-  margin-right: 20px;
-  border-right: 1px solid #CCC;
-  float: left;
-}
-.footColumnRight {
-  padding-right: 10px;
-  float: left;
-}
-.footLabel {
-  font-weight: bold;
-  font-size: 11px;
-  color: #1E4A8C;
-  margin-bottom: 5px;
-}
-.footValues {
-  margin-left: 0;
-  padding-bottom: 6px;
-  font-size: 11px;
-  line-height: 1.6;
-}
+/* Footer */
+#footerDiv { clear: both; width: 875px; margin-top: 12px; padding-bottom: 12px; font-size: 11px; }
+#footContent { background: #EEE; border-top: 1px solid #CCC; border-bottom: 1px solid #CCC; padding: 8px 0; }
+.footColumnLeft { width: 215px; padding-left: 10px; margin-right: 20px; border-right: 1px solid #CCC; float: left; }
+.footColumnMid { width: 295px; margin-right: 20px; border-right: 1px solid #CCC; float: left; }
+.footColumnRight { padding-right: 10px; float: left; }
+.footLabel { font-weight: bold; font-size: 11px; margin-bottom: 5px; }
+.footValues { margin-left: 0; padding-bottom: 6px; font-size: 11px; line-height: 1.6; }
 .footValues .column { float: left; margin-right: 20px; }
-#footCopyright {
-  padding-top: 12px;
-  text-align: center;
-  color: #666;
-}
+#footCopyright { padding-top: 12px; text-align: center; color: #666; }
+
+
+/* =========================================
+   TEMA AZUL KAWAII (OVERRIDES)
+   ========================================= */
+body { background-color: #F4F8FC; }
+a:link, a:visited, a:active { color: #0033CC; }
+.hpBlockHeading { color: #1E4A8C; border-bottom: 1px solid #ccc; }
+#hpFeaturedHeading h1 { color: #1E4A8C; }
+.vtitle a { color: #1E4A8C; }
+#gNavBottom { background: #1E4A8C; }
+#gNavDiv .tab { background: #4A7DC9; border-right: 1px solid #2B5BA8; margin-left: 1px; }
+#gNavDiv .tab a:hover { background: #2B5BA8; }
+#gNavDiv #upload { background: #2B5BA8; }
+
+/* Login Box Azul */
+.headerRCBox .rch * { background: #4A7DC9; }
+.headerRCBox .rch1 { border-color: #6B9AE0; background: #5A8DD9; }
+.headerRCBox .rch2 { border-color: #8BB0F0; background: #4A7DC9; }
+.headerRCBox .rch3 { border-color: #4A7DC9; }
+.headerRCBox .rch4 { border-color: #6B9AE0; }
+.headerRCBox .rch5 { border-color: #5A8DD9; }
+.headerRCBox .content { background: #4A7DC9; }
+.headerTitle { color: #fff; }
+.contentBox { background: #F5F8FC; }
+
+/* Blocos Laterais */
+.hpPurpleBlock { background: #E8EEF9; border-color: #B8C4E0; }
+.hpYellowBlock { background: #FBF9E8; border-color: #E5D98A; }
+
+/* Footer */
+.footLabel { color: #1E4A8C; }
+#footCopyright { color: #1E4A8C; }
 </style>
 </head>
 <body>
 
 <div id="baseDiv">
 
-  <!-- ===== HEADER ===== -->
+  <!-- HEADER -->
   <div id="logoTagDiv">
     <a href="#"><img src="./assets/logo.png" alt="YouTube" width="123" height="63" border="0"></a>
   </div>
@@ -450,57 +186,30 @@ hr {
   </div>
   <div id="gNavBottom">&nbsp;</div>
 
-  <!-- ===== MAIN CONTENT ===== -->
+  <!-- MAIN CONTENT -->
   <div id="hpMainContent">
 
-    <!-- Director Videos -->
-    <div class="hpContentBlock">
-      <div id="hpSVidHeader">Director Videos</div>
-      <div>
-        <div class="hpSVidEntry" style="margin-bottom: 0;">
-          <div class="vtitle smallText"><a href="#">Swing Blade - Parod...</a></div>
-          <div class="vfacets" style="margin-bottom: 0;"><a href="#" class="dg">ButterTV</a></div>
-        </div>
-        <div class="hpSVidEntry" style="margin-bottom: 0;">
-          <div class="vtitle smallText"><a href="#">Hometown Baghdad - ...</a></div>
-          <div class="vfacets" style="margin-bottom: 0;"><a href="#" class="dg">chattheplanet</a></div>
-        </div>
-        <div class="hpSVidEntry" style="margin-bottom: 0;">
-          <div class="vtitle smallText"><a href="#">Lolla Lives-Shepard...</a></div>
-          <div class="vfacets" style="margin-bottom: 0;"><a href="#" class="dg">lollalives</a></div>
-        </div>
-        <div class="hpSVidEntry" style="margin-bottom: 0;">
-          <div class="vtitle smallText"><a href="#">Black Anthem</a></div>
-          <div class="vfacets" style="margin-bottom: 0;"><a href="#" class="dg">pdrop</a></div>
-        </div>
-        <div class="clearL" style="height: 1px;"></div>
-      </div>
-    </div>
-
-    <!-- Featured Videos Heading -->
     <div id="hpFeaturedHeading">
       <div id="hpFeaturedMoreTop"><a href="#">See More Featured Videos</a></div>
       <h1>Featured Videos</h1>
     </div>
 
-    <!-- Editor Info -->
     <div id="hpEditorDiv">
       <div id="hpEditorAbout"><a href="#">Become a guest editor</a></div>
+      <div id="hpEditorImg"></div>
       <div id="hpEditorInfo">
         <div id="hpEditorHead">Featured Videos selected by:</div>
         <b><a href="#">YouTube</a></b>
       </div>
     </div>
 
-    <!-- ===== ÚNICO VÍDEO FEATURED ===== -->
+    <!-- ÚNICO VÍDEO FEATURED -->
     <div id="hpFeaturedList">
       <div class="vEntry">
         <table cellspacing="0" cellpadding="0" width="100%">
           <tr>
             <td width="130" valign="top" rowspan="2">
-              <div id="QLContainer">
-                <a href="#">[Vídeo]</a>
-              </div>
+              <div class="vimg120">[ Video ]</div>
             </td>
             <td valign="top">
               <div class="vtitle">
@@ -510,7 +219,6 @@ hr {
               <div class="vdesc">
                 A solo worm performing a thoughtful little number. No worms were hurt.<br/><br/>
                 Following a gruelling audition process, one solo worm was hand selected to perform its own music, without proviso, upon a specially adapted and destabilised FM synthesis circuit disembowelled from a Yamaha PSS-470. For one day, this worm was treated like royalty; whisked around London's swankiest mud spas and hermaphrodite clubs, before spending an evening at the very best hotel...
-                <span class="smallText">(<a href="#" class="eLink">more</a>)</span>
               </div>
             </td>
           </tr>
@@ -525,7 +233,7 @@ hr {
                   <span class="grayText">Views:</span> 858
                 </div>
                 <div style="white-space: nowrap">
-                  ★★★★★
+                  <span class="rating">★★★½☆</span>
                 </div>
               </div>
             </td>
@@ -538,25 +246,14 @@ hr {
 
   </div>
 
-  <!-- ===== SIDEBAR ===== -->
+  <!-- SIDEBAR -->
   <div id="hpSideContent">
 
-    <!-- Account Links -->
     <div id="hpAccountLinksDiv">
-      <div class="marL38">
-        <a href="#">Videos</a>
-        -
-        <a href="#">Favorites</a>
-        -
-        <a href="#">Playlists</a>
-        -
-        <a href="#">Inbox</a>
-        -
-        <a href="#">Subscriptions</a>
-      </div>
+      <a href="#">Videos</a> - <a href="#">Favorites</a> - <a href="#">Playlists</a> - <a href="#">Inbox</a> - <a href="#">Subscriptions</a>
     </div>
 
-    <!-- Member Login com rounded corners -->
+    <!-- Member Login -->
     <div class="hpContentBlock">
       <div class="headerRCBox">
         <b class="rch">
@@ -594,7 +291,7 @@ hr {
       </div>
     </div>
 
-    <!-- New at YouTube - Azul -->
+    <!-- New at YouTube -->
     <div class="hpContentBlock">
       <div class="hpPurpleBlock">
         <div class="hpBlockHeading">New at YouTube</div>
@@ -616,11 +313,10 @@ hr {
             More new (and improved) YouTube features in development! Now with Active Sharing.
           </div>
         </div>
-        <div style="font-size: 1px; height: 1px;"><br/></div>
       </div>
     </div>
 
-    <!-- Read Our Blog - Amarelo -->
+    <!-- Read Our Blog -->
     <div class="hpContentBlock">
       <div class="hpYellowBlock">
         <div class="hpBlockHeading">Read Our Blog</div>
@@ -635,7 +331,7 @@ hr {
       </div>
     </div>
 
-    <!-- Featured Channels - Azul -->
+    <!-- Featured Channels -->
     <div class="hpContentBlock">
       <div class="hpPurpleBlock">
         <div class="hpBlockHeading">Featured Channels</div>
@@ -670,58 +366,6 @@ hr {
       </div>
     </div>
 
-    <!-- Featured Communities - Amarelo -->
-    <div class="hpContentBlock">
-      <div class="hpYellowBlock">
-        <div class="hpBlockHeading">Featured Communities</div>
-        <div class="hpGroupEntry v80hEntry">
-          <div class="vinfo">
-            <b><a href="#">TurnHereTravel</a></b>
-            <div class="vfacets"> 52 Videos | 11 Discussions</div>
-          </div>
-          <div class="clear"></div>
-        </div>
-        <div class="hpGroupEntry v80hEntry">
-          <div class="vinfo">
-            <b><a href="#">TopThisTVChallenge</a></b>
-            <div class="vfacets"> 117 Videos | 1 Discussions</div>
-          </div>
-          <div class="clear"></div>
-        </div>
-        <div class="smallText" style="text-align: right;"><a href="#">See More Communities</a></div>
-      </div>
-    </div>
-
-    <!-- Mobile Videos - Azul -->
-    <div class="hpContentBlock">
-      <div class="hpPurpleBlock">
-        <div class="hpBlockHeading">Popular Videos for Mobile Devices</div>
-        <div class="hpChannelEntry v80hEntry">
-          <div class="vinfo">
-            <b><a href="#">The Doghouse JV and Elvis</a></b>
-            <div class="vfacets">
-              <span class="grayText">From:</span> <a href="#">doghousevideos</a><br/>
-              <span class="grayText">Views:</span> 6379<br/>
-            </div>
-          </div>
-          <div class="clear"></div>
-        </div>
-        <div class="hpChannelEntry v80hEntry">
-          <div class="vinfo">
-            <b><a href="#">How To Cook Lizard Eggs</a></b>
-            <div class="vfacets">
-              <span class="grayText">From:</span> <a href="#">drewtoothpaste</a><br/>
-              <span class="grayText">Views:</span> 36772<br/>
-            </div>
-          </div>
-          <div class="clear"></div>
-        </div>
-        <div class="smallText" style="text-align: right;">
-          <a href="#">See more mobile videos</a>
-        </div>
-      </div>
-    </div>
-
     <!-- Categories -->
     <div class="hpContentBlock">
       <div class="hpBlockHeading">Categories</div>
@@ -750,7 +394,7 @@ hr {
 
   <div class="spacer">&nbsp;</div>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- FOOTER -->
   <div id="footerDiv">
     <div id="footContent">
       <div class="footColumnLeft">
@@ -763,10 +407,6 @@ hr {
           <div class="column">
             <a href="#">Playlists</a><br/>
             <a href="#">Inbox</a><br/>
-          </div>
-          <div class="column">
-            <a href="#">Subscriptions</a><br/>
-            <a href="#">more...</a><br/>
           </div>
         </div>
       </div>
@@ -781,10 +421,6 @@ hr {
             <a href="#">Developer APIs</a><br/>
             <a href="#">Safety Tips</a><br/>
           </div>
-          <div class="column">
-            <a href="#">Copyright Notices</a><br/>
-            <a href="#">Code of Conduct</a><br/>
-          </div>
         </div>
       </div>
       <div class="footColumnRight">
@@ -797,14 +433,6 @@ hr {
           <div class="column">
             <a href="#">Terms of Use</a><br/>
             <a href="#">Privacy Policy</a><br/>
-          </div>
-          <div class="column">
-            <a href="#">Blog</a><br/>
-            <a href="#">Contact</a><br/>
-          </div>
-          <div class="column">
-            <a href="#">Press</a><br/>
-            <a href="#">Jobs</a><br/>
           </div>
         </div>
       </div>
