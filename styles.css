@@ -40,8 +40,6 @@ a.title:hover {font-family: Arial, Helvetica, sans-serif; color: #CCFFFF; font-s
 .brownSubTitle { font-size: 13px; font-weight: bold; color: #CC6633; }
 .SubTitle { font-size: 14px; font-weight: bold; color: #CC6633; }
 .tableSubTitleInfo { font-size: 12px; padding: 3px; padding-left: 10px; }
-
-/* Modules */
 .moduleEntrySelected { background-image: url(/img/table_results_selected_bg.gif); background-repeat: repeat-x; background-color: #FFFFCC; background-position: left top; border-bottom: 1px dashed #999999; padding: 10px 10px 0px 10px; }
 .moduleEntry { background-color: #DDD; background-image: url(/img/table_results_bg.gif); background-position: left top; background-repeat: repeat-x; border-bottom: 1px dashed #999999; padding: 10px; }
 .moduleEntryThumb { border: 5px solid #FFFFFF; margin-right: 10px; }
@@ -61,23 +59,15 @@ a.title:hover {font-family: Arial, Helvetica, sans-serif; color: #CCFFFF; font-s
 .moduleFrameEntry { width: 270px; background-color: #DDD; background-image: url(/img/table_results_bg.gif); background-position: left top; background-repeat: repeat-x; border-bottom: 1px dashed #999999; padding: 8px; }
 .moduleFrameTitle { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; margin-bottom: 3px; color: #0033CC; }
 .moduleFrameDetails { font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: normal; margin-bottom: 5px; color: #666666; }
-
-/* Form Elements */
 .formTitle { padding: 4px; padding-left: 7px; padding-bottom: 5px; margin-bottom: 10px; background-color: #E5ECF9; border-bottom: 1px dashed #3366CC; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; }
 .formTable { width: 80%; padding: 5px; margin-bottom: 20px; margin-left: auto; margin-right: auto; }
 .formIntro { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; margin-bottom: 15px; padding-left: 10px; }
 .formFieldInfo { font-size: 11px; color: #000; margin: 3px 0px; }
-
-/* Page Elements */
 .pageTitle { padding: 4px; padding-left: 7px; padding-bottom: 5px; margin-bottom: 15px; background-color: #E5ECF9; border-bottom: 1px dashed #3366CC; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; }
 .pageTable { padding: 0px 5px 0px 5px; margin-bottom: 20px; }
 .pageText { padding: 0px 5px 0px 5px; }
 .pageIntro { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; margin-bottom: 15px; }
-
-/* Mail Elements */
 .mailMessageArea { background-color: #FFFFFF; border: 1px dashed #999999; padding: 7px; padding-bottom: 10px; margin-bottom: 15px; }
-
-/* Watch Elements */
 .watchTitleBar { background-color: #CCCCCC; border-bottom: 1px dashed #999999; }
 .watchTitle { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; margin-left: 5px; margin-bottom: 6px; color: #333333; }
 .watchTable { background-color: #DDDDDD; background-image: url(/img/table_results_bg.gif); background-repeat: repeat-x; background-position: left top; border-bottom: 1px dashed #999999; padding: 5px; padding-bottom: 10px; text-align: center; }
@@ -86,7 +76,6 @@ a.title:hover {font-family: Arial, Helvetica, sans-serif; color: #CCFFFF; font-s
 .watchTags { font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 5px 0px 10px 0px; color: #333333; }
 .watchAdded { font-family: Arial, Helvetica, sans-serif; font-size: 11px; margin-bottom: 10px; color: #333333; }
 .watchDetails { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; color: #333333; }
-
 .commentsTitle { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #333333; background-color: #EEEEEE; padding: 5px; padding-bottom: 6px; border-top: 1px dashed #999999; border-bottom: 1px dashed #999999; }
 .groupCommentsTitle { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #333333; background-color: #EEEEEE; padding: 5px; padding-bottom: 6px; }
 .BoxedBorderTable { padding-left: 10px; border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC; border-left: 1px solid #CCCCCC; }
@@ -94,13 +83,9 @@ a.title:hover {font-family: Arial, Helvetica, sans-serif; color: #CCFFFF; font-s
 .commentsEntry { font-size: 11px; background-color: #FFFFCC; padding: 10px; border-bottom: 1px dashed #999999; }
 .commentsThumb { border: 5px solid #FFFFFF; margin-right: 5px; }
 .profileLabel { font-size: 12px; font-weight: bold; color:#DD8833; margin: 10px 0px 2px 0px; }
-
-/* QuickList add icon */
 #QLIcon { position: absolute; z-index: 2; width: 25px; top: 66px; left: 1px; }
 #QLIconRelated { position: absolute; z-index: 2; width: 25px; top: 46px; left: 1px; }
 #QLContainer { position: relative; }
-
-/* Code Elements */
 .standoutLabel { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #000000; }
 .brightLabel { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFFFF; }
 .SubscriptionTables { border: none; }
@@ -126,8 +111,6 @@ a.title:hover {font-family: Arial, Helvetica, sans-serif; color: #CCFFFF; font-s
 .playlistLinks a { text-align: right; display: block; font-size: 14px; margin: 10px; font-weight: bold; }
 .playlist .title { font-size: 16px; font-weight: bold; }
 .playlist .title a { text-decoration: none; }
-
-/* msolo remix */
 .roundedTable { margin: 0px auto 1em auto; }
 .sunkenTitle { font-size: 14px; font-weight: bold; margin: 0px 0px 5px 5px; }
 .sunkenTitleBar { width: 100%; border-bottom: 1px dashed #999; }
@@ -141,12 +124,8 @@ img.videobarthumbnail_white { border: 3px solid #DDD; }
 .tag_list { margin: 1em 0px 0.5em 0px; font-weight: bold; color: #333; }
 .tag_list p { margin: 0px 0px 0.5em 0px; padding-left: 0.5em; font-weight: normal; color: #999; }
 .moduleEntry input { margin: 1em 0px 0px 0px; }
-
-/* Groups and Colleges */
 #groupHeaderBox { border-bottom: 1px dashed #999; padding-bottom: 10px; margin-bottom: 10px; clear: both; }
 #groupMainContentWithLeftNav { width: 710px; margin-left: 165px; height: 100%; }
-
-/* New classes/IDs for Ches' visual redesign */
 #baseContainer { padding-top: 5px; padding-left: 25px; padding-right: 25px; }
 #groupMainContent { width: 685px; height: 100%; }
 .leadParaIndent { font-size: 13px; padding-left: 75px; padding-right: 75px; }
@@ -171,19 +150,13 @@ div.cyc-top-menu span.tabContent { font-size: 12px; padding: 0px 1px; }
 .sharingDiv { z-index: 6; left: 558px; position: absolute; width:260px; border:1px #CCC solid; background-color:#f7f7f7; text-align:left; padding:5px; }
 .sharingDivProfile { z-index: 6; left: 600px; top: 25px; font-size:12px; position: absolute; font-family: Arial, Helvetica, sans-serif; width:260px; border:1px #CCC solid; background-color:#f7f7f7; text-align:left; padding:5px; }
 .profileTopContainer { width:875px; position: relative; }
-
-/* Locale Picker */
 #localePickerBox { top: 33px; left: auto; right: 0px; text-align: left; z-index: 35; display: none; position: absolute; width: 135px; padding: 5px; background-color: #EEE; border: 1px solid #999; font-size: 13px; }
 #localePickerBoxProfile { top: 23px; left: auto; right: 0px; text-align: left; z-index: 35; display: none; position: absolute; width: 135px; padding: 5px; background-color: #EEE; border: 1px solid #999; font-size: 13px; }
 #currentCountryBox { display: inline; text-align: right; position: absolute; width: 20px; }
 .flagDiv { margin-bottom: 5px; }
 .currentFlag { margin-left: 5px; vertical-align: middle; }
 .dropdownDivider { border-bottom: 1px dotted #999; padding-bottom: 5px; margin-bottom: 5px; }
-
-/* login box */
 .loginBoxZStd { top: 23px; left: auto; right: 0px; text-align: left; z-index: 130; display: none; position: absolute; width: 300px; padding: 5px; background-color: #EEE; border: 1px solid #999; font-size: 13px; }
-
-/* HTML Overrides */
 html { height: 100% }
 body { font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: #FFF; color: #000; }
 a:link, a:visited, a:active { color: #03C; }
@@ -204,8 +177,6 @@ h4 { font-size: 12px; }
 h5 { font-size: 10px; }
 h6 { font-size: 10px; }
 hr { border: 0px; margin-top: 12px; border-top: 1px dashed #999; height: 1px; }
-
-/* Common Elements */
 .standardText { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; color: #000000; }
 .normalText { font-size: 12px; }
 .smallText { font-size: 11px; }
@@ -319,8 +290,6 @@ hr { border: 0px; margin-top: 12px; border-top: 1px dashed #999; height: 1px; }
 .hid { display: none; }
 .extraVertSpaceReg { padding-top: 8px; }
 .hand { cursor: pointer; cursor: hand; }
-
-/* Common Layout Elements */
 #sidebarRight245 { float: right; width: 245px; margin-left: 15px; margin-bottom: 9px; }
 #sidebarRight305 { float: right; width: 305px; margin-left: 10px; margin-bottom: 9px; }
 #mainContent { width: 700px; margin-right: 12px; }
@@ -348,8 +317,6 @@ hr { border: 0px; margin-top: 12px; border-top: 1px dashed #999; height: 1px; }
 #sectionHeader .my { float: right; }
 #sectionHeader .name { float: left; width: 150px; font-size: 21px; font-weight: bold; }
 #sectionHeader .title { font-size: 16px; font-weight: bold; line-height: 34px; }
-
-/* Masthead Elements */
 #baseDiv { position: relative; width: 875px; margin-left: auto; margin-right: auto; }
 #logoTagDiv { float: left;  padding-top: 6px; }
 #logoHomeTip { display: none; position: absolute; top: 25px; left: 130px; font-size: 11px; color: #666; }
@@ -362,17 +329,8 @@ hr { border: 0px; margin-top: 12px; border-top: 1px dashed #999; height: 1px; }
 #gNavDiv #upload { float: right; width: 220px; font-size: 1.1em; font-weight: bold; }
 #gNavDiv .tab { float: right; width: 124px; border:0px #333 solid; }
 #gSubNavDiv { clear: both; background: #DDD; text-align: center; padding: 8px 0px; margin-bottom: 10px; }
-#gNavBottom {
-  height: 24px;
-  background: linear-gradient(to bottom, #C8C8C8 0%, #E8E8E8 30%, #F5F5F5 60%, #FFFFFF 100%);
-  border-radius: 12px 12px 0 0;
-  margin-top: -1px;
-  margin-bottom: 6px;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
-}
+#gNavBottom { height: 24px; background: #DDD url(/img/pic_globalnav_gradation_875x24.png) top left no-repeat; margin-bottom: 6px; }
 #accountQuickLinks { font-size: 11px; text-align: right; }
-
-/* Footer Elements */
 #footerDiv { clear: both; width: 875px; margin-top: 12px; padding-bottom: 12px; font-size: 11px; }
 #footerCopyright { padding-top: 12px; text-align: center; }
 #footerLinks { height: 50px; line-height: 15px; }
@@ -384,15 +342,11 @@ hr { border: 0px; margin-top: 12px; border-top: 1px dashed #999; height: 1px; }
 .footLabel { font-weight: bold; font-size: 11px; color: #333; }
 .footValues { margin-left: 0px; padding-bottom: 6px; font-size: 11px; height: 30px; }
 .footValues .column { float: left; margin-right: 20px; }
-
-/* Local Subnav Elements */
 #subnavContent { width: 670px; }
 #subnavSidebar { border: 1px solid #CCC; float: right; width: 185px; background-color: #EEE; padding: 0px; margin-top: 0px; margin-left: 15px; }
 .navItem { list-style: none; margin: 0px; padding: 6px; border-bottom: 1px dashed #999; font-weight: bold; }
 .navItemHighlight { list-style: none; padding: 6px; background-color: #BCE; border-bottom: 1px dashed #999; font-weight: bold; }
 .sidebarLinks { margin-top: 3px; margin-bottom: 3px; }
-
-/* htmlForm Elements */
 .dataEntryTable { width: 650px; }
 .formLabel  { font-weight: bold; text-align: right; width: 200px; }
 .formImg { padding-right: 2px; vertical-align: middle; }
@@ -414,8 +368,6 @@ hr { border: 0px; margin-top: 12px; border-top: 1px dashed #999; height: 1px; }
 .contestThumb { vertical-align: top; text-align: center; width: 100px; height: 180px; overflow: auto; padding: 10px 5px; }
 .thumbInfo { text-align: left; padding: 3px 0 0 5px; }
 .thumbHilite { border: 2px #fc3 solid; }
-
-/* Video Display Elements */
 .vGridBox { padding: 6px; border: 1px solid #CCC; background: #EEE; }
 .vListBox { padding: 0px 6px; border: 1px solid #CCC; background: #EEE; }
 .vimg { width: 130px; height: 100px; border: 1px solid #CCC; }
@@ -508,8 +460,6 @@ img.rating { border: 0px; padding: 0px; margin: 0px; vertical-align: middle; }
 .v50hEntry .vinfo { margin-left: 56px; }
 .vimgFaded { width: 120px; height: 90px; border: 1px solid #CCC; opacity : .3; -moz-opacity : .3; filter : alpha(opacity=30); }
 .playlistHeading { float:left; width:320px; margin-left:5px; margin-bottom:8px; }
-
-/* Homepage Elements */
 #hpMainContent { float: left; width: 555px; }
 #hpSideContent { float: right; width: 300px; }
 .hpContentBlock { margin: 5px 0px; }
@@ -575,8 +525,6 @@ img.rating { border: 0px; padding: 0px; margin: 0px; vertical-align: middle; }
 .hpVfacetLeft { float: left; padding: 1px 10px 0px 0px; }
 .hpPurpleBlock { background: #EBEDF3 url(/img/pic_blue_top_300x400.gif) top left no-repeat; padding: 8px 10px 0px 10px; margin-bottom: 0px; }
 .hpYellowBlock { background: #FBF9E8 url(/img/pic_yellow_top_300x500.gif) top left no-repeat; padding: 10px 15px 0px 15px; margin-bottom: 0px; }
-
-/* Category Elements */
 .catNameHeader { font-size: 16px; font-weight: bold; padding: 6px 0px 4px 0px; }
 .catNameHeader a { text-decoration: none; }
 .catNameHeader a:hover { text-decoration: underline; }
@@ -601,8 +549,6 @@ img.rating { border: 0px; padding: 0px; margin: 0px; vertical-align: middle; }
 .commHeading .count { color: #666; padding-left: 12px; }
 .commHeading .more { float: right; font-size: 11px; font-weight: bold; padding-top: 6px }
 .commCollegeDesc { font-size: 15px; line-height: 20px; }
-
-/* Groups and Contests Elements */
 #groupCommonHeader { border-bottom: 1px dashed #999; padding-bottom: 12px; margin-bottom: 12px; }
 #groupStillDiv {}
 #groupHeaderInfo {}
@@ -637,21 +583,15 @@ img.rating { border: 0px; padding: 0px; margin: 0px; vertical-align: middle; }
 .cruntime { font-size: 11px; color: #000; }
 #contestTerms { display: none; width: 655px; z-index: 99; position: absolute; left: 5px; background-color: #ddd; margin: 5px 10px 0 0; border: 2px #ccc solid; padding: 15px 15px 50px 15px; }
 #termsBox { padding: 5px; text-align: left; width: 600px; height: 280px; overflow: auto; background-color: #fff; }
-
-/* Signin Signup Elements */
 #siSignupDiv { float: left; width: 420px; margin-bottom: 24px; }
 #suSignupDiv { float: left; background-color: #EEE; margin-bottom: 24px; }
 #suInOrderToDiv { background-color: #FFFFCC; border: 1px solid #CCCC66; margin: 6px 25%; padding: 6px; font-weight: bold; }
 #suSigninDiv { width: 400px; float: right; }
-
-/* Sharing Popup Element */
 #set_of_links { position: relative; padding: 0px; border: none; background: #FFF; margin-bottom: 20px; }
 #set_of_links a { display: inline; color: #03C; }
 #set_of_links a:hover { background: #FFC; text-decoration: none; color: #000; }
 #set_of_links a span { display:none }
 #set_of_links a:hover span { display: inline; position: absolute; left: 0px; background: #FFC; padding: 5px 15px 5px 0px; }
-
-/* Channel Customization Code */
 .dataEntryTableSm { width: 360px; margin-top: 5px; }
 .formLabelLong  { font-weight: bold; text-align: right; width: 210px; }
 .formLabelSm { font-weight: bold; text-align: right; width: 200px; }
@@ -666,16 +606,12 @@ tr.inputSizeSs td { width: 316px; }
 #viewPublicChannel  { clear: right; float: right; margin-left: 12px; padding: 6px 8px; border: 1px solid #999; font-weight: bold; }
 .horizontalDisplayTable { margin-left: 30px; margin-bottom: 15px; width: 630px; }
 tr.horizontalDisplayTable td { text-align: center; width: 90px; font-weight: bold; }
-
-/* Bulletin code */
 .displayTable { border: 1px solid #CCC; }
 tr.displayTable td { padding-top: 4px; padding-bottom: 8px; border-bottom: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC; }
 .displayPostTable { border: 1px solid #CCCCCC; }
 tr.displayPostTable td { padding-top: 4px; padding-bottom: 8px; }
 .columnTitles { font-weight: bold; color: #000000; }
 .imgBrdr { border: 2px solid #CCCCCC; }
-
-/* Musician Forms Code */
 .editDividerTable { border-bottom: 1px dashed #CCCCCC; width: 650px; padding-bottom: 10px; padding-top: 15px; }
 .editDividerTableEnd { border-bottom: none; width: 650px; padding-bottom: 10px; padding-top: 15px; }
 .formLabelTiny { font-weight: bold; width: 100px; text-align: right; }
@@ -683,8 +619,6 @@ tr.displayPostTable td { padding-top: 4px; padding-bottom: 8px; }
 .descriptionTable { border: 1px solid #CCC; }
 tr.descriptionTable td { padding-left: 5px; padding-top: 5px; padding-bottom: 5px; padding-right: 5px; border-bottom: 1px solid #CCC; }
 tr.descriptionTableNB td { padding-left: 5px; padding-top: 5px; padding-bottom: 5px; padding-right: 5px; }
-
-/* QuickList Elements */
 .quicklist_container { padding-top:12px; }
 div.scroll { height: 206px; overflow: auto; }
 div.watchlist_videos { width: 448px; background-color: #F7F7F7; border: 1px #DDD solid; }
@@ -695,8 +629,6 @@ div.watchlist_videos { width: 448px; background-color: #F7F7F7; border: 1px #DDD
 .saveRowSetting { float:left; margin-top:0px; }
 .nextVideoDisplay { float:left; margin-left:3px; margin-top:1px; }
 .quicklistClickableArea { cursor:hand; cursor:pointer; }
-
-/* Ptch boxes - as seen on the post-signup page */
 #pitchSection { margin: 10px 80px 10px 40px; color: #333; font-size: 12px; }
 #pitchDesc { margin-left: 50px; }
 .pitchBox { height: 155px; width: 790px; margin: 10px 0; padding: 10px 0 0 160px; }
@@ -713,28 +645,20 @@ div.watchlist_videos { width: 448px; background-color: #F7F7F7; border: 1px #DDD
 #pitchButton { }
 #youtubeChannel { color: #333; margin-bottom: 10px; }
 #youtubeChannel #linetwo { margin-left: 22px; }
-
-/* Pagination Elements */
 .pagingDiv { background: #CCC; padding: 4px; font-weight: bold; text-align: right; }
 .pagingDivClear { padding: 3px; font-weight: bold; text-align: right; }
 .pagingDivClearTop { padding: 3px; padding-top: 5px; font-weight: bold; text-align: right; }
 .pagerCurrent { color: #000; background-color: #FFF; padding: 1px 3px; margin-right: 3px; }
 .pagerNotCurrent { color: #03C; padding: 1px 3px; margin-right: 3px; text-decoration: underline; cursor: pointer; cursor: hand; }
 .bottomBorderDotted { border-bottom: 1px dotted #999; margin-bottom: 5px; margin-top: 5px; }
-
-/* My Account Elements */
 #myaLeftCol { width: 360px; float: left; }
 #myaRightCol { width: 360px; margin-left: 375px; }
 .myAccountExplanatoryText  { float: right; text-align: left; margin-top: 6px; width:150px; margin-right: 6px; padding: 4px; color: #666; }
-
-/* Section Color Elements */
 .videosColor { color: #000; }
 .categoriesColor { color: #000; }
 .channelsColor { color: #000; }
 .communityColor { color: #000; }
 .searchColor { color: #000; }
-
-/* TestTube Elements */
 #ttLeft { float: left; width: 475px; }
 #ttLeft p { font-size: 14px; color: #333; line-height: 20px; }
 #ttRight { margin-left: 500px; }
