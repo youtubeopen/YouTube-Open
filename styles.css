@@ -664,7 +664,7 @@ div.watchlist_videos { width: 448px; background-color: #F7F7F7; border: 1px #DDD
 #ttRight { margin-left: 500px; }
 
 /* TEMA AZUL KAWAII (OVERRIDES) */
-body { background-color: #F4F8FC; }
+body { background-color: #FFFFFF; }
 a:link, a:visited, a:active { color: #0033CC; }
 .hpBlockHeading { color: #1E4A8C; border-bottom: 1px solid #ccc; }
 #hpFeaturedHeading h1 { color: #1E4A8C; }
@@ -684,11 +684,12 @@ a:link, a:visited, a:active { color: #0033CC; }
   display: block;
 }
 
-/* gNavBottom - subtle gray gradient like the image */
+/* gNavBottom - all top corners rounded, moved 1px up */
 #gNavBottom {
   height: 24px;
   background: linear-gradient(to bottom, #C8C8C8 0%, #E8E8E8 30%, #F5F5F5 60%, #FFFFFF 100%);
-  border-radius: 12px 0 0 0;
+  border-radius: 12px 12px 0 0;
+  margin-top: -1px;
   margin-bottom: 6px;
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
 }
