@@ -267,3 +267,42 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PamTape</title>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+    autoplay: "on",
+    splashScreen: false,
+    contextMenu: false,
+    unmuteOverlay: "hidden",
+    warnOnUnsupportedContent: false
+};
+</script>
+
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+
+<body>
+
+<div id="active-sharing">
+    <object
+        data="/assets/active_sharing.swf"
+        type="application/x-shockwave-flash"
+        width="520"
+        height="350">
+        <param name="movie" value="/assets/active_sharing.swf">
+        <param name="quality" value="high">
+        <param name="wmode" value="transparent">
+        <param name="allowScriptAccess" value="always">
+        <param name="play" value="true">
+        <param name="loop" value="false">
+    </object>
+</div>
+
+</body>
+</html>
